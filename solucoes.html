@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combate à Crise Hídrica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div id="btn-menu">
+            <div class="btn-bar" id="btn-bar1"></div>
+            <div class="btn-bar" id="btn-bar2"></div>
+            <div class="btn-bar" id="btn-bar3"></div>
+        </div>
+        <img id="logo" src="img/logo-small.png" alt="logo Save The World">
+    </nav>
+
+    <script>
+        const button = document.querySelector("#btn-menu");
+        var clicked = 0;
+
+        button.addEventListener("click", (event) => {
+            if (clicked == 0){
+                clicked = 1;
+                document.getElementById("menu").style.left = "0px";
+                document.getElementById("btn-bar1").style.position = "absolute";
+                document.getElementById("btn-bar1").style.transform = "rotate(45deg)";
+                document.getElementById("btn-bar1").style.top = "14px";
+                document.getElementById("btn-bar2").style.opacity = "0%";
+                document.getElementById("btn-bar3").style.position = "absolute";
+                document.getElementById("btn-bar3").style.transform = "rotate(-45deg)";
+            }
+            else {
+                clicked = 0;
+                document.getElementById("menu").style.left = "-430px";
+                document.getElementById("btn-bar1").style.position = "relative";
+                document.getElementById("btn-bar1").style.transform = "rotate(0deg)";
+                document.getElementById("btn-bar1").style.top = "0px";
+                document.getElementById("btn-bar2").style.opacity = "100%";
+                document.getElementById("btn-bar3").style.position = "relative";
+                document.getElementById("btn-bar3").style.transform = "rotate(0deg)";
+            }
+            });
+
+    </script>
+    <div id="menu-fixed">
+        <ul id="menu">
+            <li class="menu-option">
+                <a href="index.html">O que está acontecendo com a água?</a>
+            </li>
+            <li class="menu-option">
+                <a href="solucoes.html">Quais Soluções?</a>
+            </li>
+            <li class="menu-option">
+                <a href="tratamento.html">Como é feito o tratamento da água?</a>
+            </li>
+            <li class="menu-option">
+                <a href="faca-sua-parte.html">Faça Sua Parte</a>
+            </li>
+            <li class="menu-option">
+                <a href="compartilhe-conosco.html">Compartilhe Conosco!</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="main-area">
+        <main>
+            <article>
+                <h1>Quais as soluções?</h1>
+                <p>          
+                    Dentre as mais variadas soluções, ou mesmo na amenização da crise hídrica existem alguns meios que se destacam nessa luta. São eles:
+                </p>
+                <img class="sol-img" src="img/tratamento-esgoto.jpg" alt="Tratamento de Esgoto">
+                <p>
+                    <strong>Tratamento de Água de Esgoto:</strong> O tratamento de águas servidas (ou tratamento de água de esgoto) é um processo pelo qual os resíduos líquidos, conhecidos como efluentes, são tratados e purificados para minimizar seu impacto no meio ambiente. Isso envolve a remoção de substâncias tóxicas, poluentes e contaminantes presentes nos efluentes, utilizando uma combinação de processos físicos, químicos e biológicos. O objetivo é garantir que a água residual seja tratada adequadamente antes de ser descarregada em corpos d'água ou até mesmo reutilizada, contribuindo para a proteção dos recursos hídricos, preservação do ecossistema e redução no uso de água potável para processos como irrigação, refrigeração, limpeza, descarga de sanitários. Entre outros.
+                </p>
+                <img class="sol-img"  src="img/dessalinizacao.jpg"
+                 alt="Dessalinização">
+                 <p>
+                    <strong>Dessalinização: </strong>A dessalinização é o processo de remoção do sal e outros minerais da água salgada, tornando-a adequada para consumo humano ou uso agrícola. Isso é feito por meio de métodos como a osmose reversa, destilação ou evaporação, onde a água é separada dos sais e impurezas. A dessalinização desempenha um papel crucial em áreas onde a água doce é escassa, permitindo o acesso a fontes alternativas de água potável e contribuindo para suprir a demanda crescente por recursos hídricos em todo o mundo.
+                 </p>
+                <img class="sol-img"  src="img/aguas-subterraneas.jpg
+                " alt="Águas Subterrâneas">
+                <p>
+                    <strong>Uso de águas subterrâneas:</strong>O uso de águas subterrâneas envolve a captação e utilização de água armazenada nos lençóis freáticos e aquíferos subterrâneos. Isso é feito por meio de poços e bombas que extraem a água para diversos fins, como abastecimento doméstico, irrigação agrícola e indústria. As águas subterrâneas são uma fonte valiosa de água, pois geralmente estão protegidas da evaporação e da poluição superficial. No entanto, é importante utilizar esses recursos de forma sustentável, monitorando o nível dos aquíferos e evitando a sobre exploração, a fim de preservar a disponibilidade a longo prazo e evitar a contaminação.
+                 </p>
+                <img class="sol-img"  src="img/reaproveitamento-caseiro.jpg
+                " alt="Reproveitamento Caseiro">
+                <p>
+                    <strong>Reaproveitamento de água caseiro: </strong>O reaproveitamento de água caseiro refere-se à prática de coletar e reutilizar água dentro de casa para diferentes finalidades. Isso pode ser feito por meio de sistemas simples, como a coleta de água da chuva para irrigação de jardins, a instalação de sistemas de filtragem para reutilização da água do banho ou da máquina de lavar, ou mesmo o uso de água de reuso para descargas de vasos sanitários. O objetivo é reduzir o consumo de água potável e minimizar o desperdício, contribuindo para a conservação dos recursos hídricos e a sustentabilidade.
+                 </p>
+                 <div id="conscientizacao1">
+                    <img id="conscientizacao-logo" class="sol-img" src="img/logo.png" alt="Conscientização">
+                    <p>
+                       <strong>Conscientização: </strong>
+                       A conscientização sobre o uso responsável de água envolve educar as pessoas sobre a importância de preservar e utilizar a água de forma sustentável. Isso é feito por meio de campanhas de conscientização, programas educacionais, divulgação de informações sobre o ciclo da água, escassez hídrica e técnicas de conservação. A conscientização promove a adoção de práticas diárias, como tomar banhos mais curtos, consertar vazamentos, utilizar equipamentos eficientes em termos de água, reutilizar água e evitar o desperdício. Também incentiva a participação ativa na gestão dos recursos hídricos, incentivando a proteção dos ecossistemas aquáticos e a implementação de políticas públicas voltadas para o uso sustentável da água.
+                    </p>
+                    <p id="conscientizacao2">
+                       Nossa página atua ativamente no processo de conscientização. Nós acreditamos que a conscientização, educação e informação são ferramentas que podem unir, trazer luz e promover todos os tipos de combate à crise hídrica. Essa é nossa missão!
+                    </p>
+                 </div>
+
+            </article>
+        </main>
+        <footer>
+            <p>Website desenvolvido para APS do curso de Ciência da Computação da UNIP Paulista. 2023.</p>
+        </footer>
+    </div>
+</body>
+</html>

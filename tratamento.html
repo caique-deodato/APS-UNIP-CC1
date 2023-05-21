@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combate à Crise Hídrica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div id="btn-menu">
+            <div class="btn-bar" id="btn-bar1"></div>
+            <div class="btn-bar" id="btn-bar2"></div>
+            <div class="btn-bar" id="btn-bar3"></div>
+        </div>
+        <img id="logo" src="img/logo-small.png" alt="logo Save The World">
+    </nav>
+
+    <script>
+        const button = document.querySelector("#btn-menu");
+        var clicked = 0;
+
+        button.addEventListener("click", (event) => {
+            if (clicked == 0){
+                clicked = 1;
+                document.getElementById("menu").style.left = "0px";
+                document.getElementById("btn-bar1").style.position = "absolute";
+                document.getElementById("btn-bar1").style.transform = "rotate(45deg)";
+                document.getElementById("btn-bar1").style.top = "14px";
+                document.getElementById("btn-bar2").style.opacity = "0%";
+                document.getElementById("btn-bar3").style.position = "absolute";
+                document.getElementById("btn-bar3").style.transform = "rotate(-45deg)";
+            }
+            else {
+                clicked = 0;
+                document.getElementById("menu").style.left = "-430px";
+                document.getElementById("btn-bar1").style.position = "relative";
+                document.getElementById("btn-bar1").style.transform = "rotate(0deg)";
+                document.getElementById("btn-bar1").style.top = "0px";
+                document.getElementById("btn-bar2").style.opacity = "100%";
+                document.getElementById("btn-bar3").style.position = "relative";
+                document.getElementById("btn-bar3").style.transform = "rotate(0deg)";
+            }
+            });
+
+    </script>
+    <div id="menu-fixed">
+        <ul id="menu">
+            <li class="menu-option">
+                <a href="index.html">O que está acontecendo com a água?</a>
+            </li>
+            <li class="menu-option">
+                <a href="solucoes.html">Quais Soluções?</a>
+            </li>
+            <li class="menu-option">
+                <a href="tratamento.html">Como é feito o tratamento da água?</a>
+            </li>
+            <li class="menu-option">
+                <a href="faca-sua-parte.html">Faça Sua Parte</a>
+            </li>
+            <li class="menu-option">
+                <a href="compartilhe-conosco.html">Compartilhe Conosco!</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="main-area">
+        <main>
+            <article>
+                <h1>TRATAMENTO DE ÁGUA DE ESGOTO</h1>
+
+                <p>
+                    Uma das formas mais efetivas na redução de uso de água potável é a reutilização da água já utilizada pelo ser humano, ou seja, através do reaproveitamento da água de esgoto. 
+Segundo a CAESB (Companhia de Saneamento Ambiental do Distrito Federal), considera-se esgoto, efluente ou águas servidas todos os resíduos líquidos domésticos e industriais que necessitam de tratamento adequado para que sejam removidas as impurezas.
+
+                </p>
+
+                <h2>PROCESSO DE TRATAMENTO DE ÁGUA DE ESGOTO</h2>
+
+                <p>O tratamento da água de esgoto pode ter início em ações que promovam a diminuição na produção de resíduos (produção mais limpa) através de processos e procedimentos de descarte correto de resíduos, de manuseio, e matériais utilizadas no processo de produção. A produção mais limpa é uma parte muito importante no tratamento do esgoto, com impactos mais efetivos se utilizados pela indústria pois essa redução colabora para maior facilidade e menor custo no tratamento da água em seu estágio final de uso, que por sua vez é tratado através da tecnologia fim de tubo (end of pipe).
+</p>
+                <p>O tipo de tratamento da água na tecnologia fim de tubo baseia-se na composição dessa água (componentes físicos, químicos e/ou biológicos presentes na água), além da destinação desejada à essa água, por isso os processos e componentes utilizados no tratamento podem variar bastante a depender da fonte dessa água de esgoto, porém normalmente o tratamento de efluentes é classificado através de 4 níveis: tratamento preliminar, tratamento primário, tratamento secundário e tratamento terciário:</p>
+                <ul>
+                    <li>
+                        <strong>Tratamento preliminar:</strong>Visa remover os sólidos grosseiros e areia do efluente tendo como objetivo evitar obstruções das bombas e tubulações além do desgaste de equipamentos por abrasão;
+                    </li>
+                    <li><strong>Tratamento primário:</strong>Visa remover os sólidos sedimentáveis e parte da matéria orgânica;</li>
+                    <li><strong>Tratamento secundário:</strong>Visa remover a matéria orgânica biodegradável solúvel e coloidal além da remoção de sólidos coloidais não sedimentáveis. Nessa etapa podem ser utilizadas bactérias, fungos, protozoários, algas e vermes.</li>
+                    <li>
+                        <strong>Tratamento terciário:</strong>Também chamado de tratamento avançado ou polimento, visa remover os nutrientes não removidos na etapa secundária, além de substâncias que promovam cor e/ou odor indesejáveis. É a principal etapa quando se busca o reuso da água.
+                    </li>
+                </ul>
+                <h2>UTILIZAÇÃO DA ÁGUA TRATADA</h2>
+                <p>Após o tratamento da água, segundo a NBR (Norma Brasileira) 13.969, item 5.6.4, a água de reuso pode ser classificada em 4 tipos de classe, sendo que quanto menor o número, maior a qualidade final da água e maior o investimento em tecnologias de tratamento:</p>
+                <ul>
+                    <li>
+                        <strong>Classe 1:</strong>Lavagem de carros e outros usos que requerem o contato direto do usuário com a água, com possível aspiração de aerossóis pelo operador incluindo chafarizes;
+                    </li>
+                    <li><strong>Classe 2:</strong>Lavagens de pisos, calçadas e irrigação dos jardins, manutenção dos lagos e canais para fins paisagísticos, exceto chafarizes;</li>
+                    <li><strong>Classe 3:</strong>Reuso nas descargas dos vasos sanitários:</li>
+                    <li><strong>Classe 4:</strong>Reuso nos pomares, cereais, forragens, pastagens para gados e outros cultivos através de escoamento superficial ou por sistema de irrigação pontual.</li>
+                </ul>
+                <p>Como é possível observar, através da água tratada de classe 4 é possível utiliza-la - dentre outros destinos - na indústria, por meio do uso na irrigação na agricultura e no resfriamento de equipamentos industriais.</p>
+                <p>Segundo Fundo de Nações Unidas para a Agricultura e Alimentos (FAO), no Brasil cerca de 72% da toda água utilizada é destinada à agricultura, e 40% dessa água é utilizada através da irrigação, o que demonstra a grande importância do uso da água de reuso, e por consequência do tratamento da água de esgoto.</p>
+            </article>
+        </main>
+        <footer>
+            <p>Website desenvolvido para APS do curso de Ciência da Computação da UNIP Paulista. 2023.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combate à Crise Hídrica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div id="btn-menu">
+            <div class="btn-bar" id="btn-bar1"></div>
+            <div class="btn-bar" id="btn-bar2"></div>
+            <div class="btn-bar" id="btn-bar3"></div>
+        </div>
+        <img id="logo" src="img/logo-small.png" alt="logo Save The World">
+    </nav>
+
+    <script>
+        const button = document.querySelector("#btn-menu");
+        var clicked = 0;
+
+        button.addEventListener("click", (event) => {
+            if (clicked == 0){
+                clicked = 1;
+                document.getElementById("menu").style.left = "0px";
+                document.getElementById("btn-bar1").style.position = "absolute";
+                document.getElementById("btn-bar1").style.transform = "rotate(45deg)";
+                document.getElementById("btn-bar1").style.top = "14px";
+                document.getElementById("btn-bar2").style.opacity = "0%";
+                document.getElementById("btn-bar3").style.position = "absolute";
+                document.getElementById("btn-bar3").style.transform = "rotate(-45deg)";
+            }
+            else {
+                clicked = 0;
+                document.getElementById("menu").style.left = "-430px";
+                document.getElementById("btn-bar1").style.position = "relative";
+                document.getElementById("btn-bar1").style.transform = "rotate(0deg)";
+                document.getElementById("btn-bar1").style.top = "0px";
+                document.getElementById("btn-bar2").style.opacity = "100%";
+                document.getElementById("btn-bar3").style.position = "relative";
+                document.getElementById("btn-bar3").style.transform = "rotate(0deg)";
+            }
+            });
+
+    </script>
+    <div id="menu-fixed">
+        <ul id="menu">
+            <li class="menu-option">
+                <a href="index.html">O que está acontecendo com a água?</a>
+            </li>
+            <li class="menu-option">
+                <a href="solucoes.html">Quais Soluções?</a>
+            </li>
+            <li class="menu-option">
+                <a href="tratamento.html">Como é feito o tratamento da água?</a>
+            </li>
+            <li class="menu-option">
+                <a href="faca-sua-parte.html">Faça Sua Parte</a>
+            </li>
+            <li class="menu-option">
+                <a href="compartilhe-conosco.html">Compartilhe Conosco!</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="main-area">
+        <main>
+            <article>
+                <h1>Faça sua parte!</h1>
+                <p id="p-faca-sua-parte">Aqui separamos o que nossos leitores contribuíram para o uso de água sustentável. Compartilhe você também através da seção "Compartilhe Conosco!"</p>
+                <div id="cards">
+                    <img class="people-cards" src="img/card1.png" alt="Card 1">
+                    <img class="people-cards" src="img/card2.png" alt="Card 2">
+                    <img class="people-cards" src="img/card3.png" alt="Card 3">
+                    <img class="people-cards" src="img/card4.png" alt="Card 4">
+                    <img class="people-cards" src="img/card5.png" alt="Card 5">
+                    <img class="people-cards" src="img/card6.png" alt="Card 6">
+                </div>
+            </article>
+        </main>
+        <footer>
+            <p>Website desenvolvido para APS do curso de Ciência da Computação da UNIP Paulista. 2023.</p>
+        </footer>
+    </div>
+</body>
+</html>
